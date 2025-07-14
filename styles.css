@@ -16,6 +16,7 @@ body {
     justify-content: center;
 }
 
+
 .container {
     max-width: 800px;
     width: 100%;
@@ -47,6 +48,7 @@ body {
     align-items: center;
     gap: 2rem;
 }
+
 
 .illustration {
     margin-bottom: 1rem;
