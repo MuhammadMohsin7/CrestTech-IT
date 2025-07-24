@@ -7,8 +7,9 @@
     <title>CrestTech IT - Full-Spectrum IT Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="asstes/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -18,19 +19,101 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="site-logo"><img src="asstes/img/logo.png" alt="CrestTech IT Logo"></div>
+            <div class="site-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="CrestTech IT Logo">
+                </a>
+            </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link" id="homes">Home</a></li>
-                <li><a href="index.html#services" class="nav-link" id="servicess">Services</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="nav-link" id="servicess">Services</a>
+                    <ul class="childmenus">
+                        <li>
+                            <a href="#">
+                                <h3>Services</h3>
+                            </a>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Cybersecurity Solutions</h4>
+                                <small>Advanced protection against digital threats.</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Cybersecurity Solutions</h4>
+                                <small>Advanced protection against digital threats.</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Cybersecurity Solutions</h4>
+                                <small>Advanced protection against digital threats.</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Cybersecurity Solutions</h4>
+                                <small>Advanced protection against digital threats.</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Cybersecurity Solutions</h4>
+                                <small>Advanced protection against digital threats.</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Cybersecurity Solutions</h4>
+                                <small>Advanced protection against digital threats.</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Cybersecurity Solutions</h4>
+                                <small>Advanced protection against digital threats.</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Cybersecurity Solutions</h4>
+                                <small>Advanced protection against digital threats.</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Cybersecurity Solutions</h4>
+                                <small>Advanced protection against digital threats.</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Cybersecurity Solutions</h4>
+                                <small>Advanced protection against digital threats.</small>
+                            </a>
+                        </li>
+                        <!-- <li class="dropdown second-level"><a href="#">2nd level dropdown</a>
+                            <ul>
+                            <li><a href="">Dropdown item 1</a></li>
+                            <li><a href="">Dropdown item 2</a></li>
+                            <li><a href="">Dropdown item 3</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </li>
                 <li><a href="aboutus.html" class="nav-link">About</a></li>
                 <li><a href="index.html#team" class="nav-link" id="teams">Team</a></li>
-                <li><a href="contact.html" class="nav-link active" id="contacts">Contact</a></li>
-                <li class="hide-desk"><a href="contact.html" class="nav-cta hide-desk">Get Started <img src="asstes/img/Background.png" alt=""></a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li class="hide-desk"><a href="contact.html" class="nav-cta hide-desk">Get Started <img src="assets/img/Background.png" alt=""></a></li>
             </ul> 
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#contact" class="nav-cta">Get Started <img src="asstes/img/Background.png" alt=""></a>
+            <a href="contact.html" class="nav-cta">Get Started <img src="assets/img/Background.png" alt=""></a>
         </div>
     </nav>
 
@@ -143,16 +226,16 @@
                 <p>&copy; 2024 CrestTech IT. All rights reserved.</p>
                 <div class="social-links">
                     <a href="#">
-                        <img src="asstes/img/Link.png" alt="">
+                        <img src="assets/img/Link.png" alt="">
                     </a>
                     <a href="#">
-                        <img src="asstes/img/Link (1).png" alt="">
+                        <img src="assets/img/Link (1).png" alt="">
                     </a>
                     <a href="#">
-                        <img src="asstes/img/Link (2).png" alt="">
+                        <img src="assets/img/Link (2).png" alt="">
                     </a>
                     <a href="#">
-                        <img src="asstes/img/Link (3).png" alt="">
+                        <img src="assets/img/Link (3).png" alt="">
                     </a>
                 </div>
             </div>
@@ -305,9 +388,14 @@
             if (window.scrollY > 100) {
                 navbar.style.background = 'rgba(255, 255, 255, 0.98)';
                 navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                navbar.style.borderRadius = 'unset';
+                navbar.style.margin = 'unset';
             } else {
                 navbar.style.background = 'rgba(255, 255, 255, 0.95)';
                 navbar.style.boxShadow = 'none';
+                navbar.style.borderRadius = '20px';
+                navbar.style.margin = '10px 15px 6px 15px';
+                navbar.style.width = '-webkit-fill-available';
             }
         });
 
